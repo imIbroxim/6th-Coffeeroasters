@@ -91,12 +91,15 @@ h2, h3, h4, p {
     margin-right: auto;
 }
 .second-container {
+    position: relative;
+    z-index: 5;
     width: 100%;
     max-width: 1440px;
-    padding: 20px 20px 0;
+    margin: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-left: auto;
     margin-right: auto;
-
 }
 .bg-container {
     width: 100%;
@@ -304,10 +307,16 @@ h2, h3, h4, p {
     flex-wrap: wrap;
 }
 .why-we-card {
+    position: relative;
     width: 100%;
     max-width: 433px;
     margin-left: 20px;
     color: var(--light-black);
+}
+.why-we-card__img-sticker {
+    position: absolute;
+    top:-50px;
+    left: -50px;
 }
 .why-we__img {
     display: block;
@@ -350,7 +359,7 @@ h2, h3, h4, p {
     margin-left:-20px;
     padding-top: 80px;
 }
-.how-it-works-card::before {
+.card-before-after::before {
     display: block;
     content:"";
     width: 60px;
@@ -359,7 +368,7 @@ h2, h3, h4, p {
     margin-bottom: 20px;
     background-color: #f8f8f2;
 }
-.how-it-works-card::after {
+.card-before-after::after {
     position: absolute;
     z-index: -1;
     top: 27px;
@@ -370,7 +379,7 @@ h2, h3, h4, p {
     height: 3px;
     border: 3px dashed var(--dark-brown);
 }
-.how-it-works-card:last-child::after {
+.card-before-after:last-child::after {
     display: none;
 }
 .section-how-it-works-card {
@@ -424,6 +433,98 @@ h2, h3, h4, p {
 }
 
 
+/* PAGE ABOUT-US  */
+/* HERO ABOUT-US  */
+.hero-about-us-wrapper {
+    justify-content: space-between;
+}
+.hero-about-us-content-wrapper {
+    width: 100%;
+    max-width: 372px;
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 150px;
+}
+.hero-about-us-img {
+    height: 596px;
+}
+/* Our commitment */
+.site-our-commitment-wrapper {
+}
+.site-our-commitment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 160px;
+    padding-left: 165px;
+    padding-right: 65px;
+    padding-bottom: 200px;
+    margin-bottom: 140px;
+}
+.site-our-commitment-content-wrapper {
+    width: 100%;
+    max-width: 626px;
+}
+.site-our-commitment__title {
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 56px;
+}
+.site-our-commitment__text {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--light-black);
+}
+
+/* PRAISE-QUALITY  */
+.praise-quality {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-left: 143px;
+    padding-right: 30px;
+    padding-bottom: 90px;
+    background-color: var(--dark-brown);
+}
+.praise-quality-content-wrapper {
+    width: 100%;
+    max-width: 639px;
+    margin-right: 15px;
+    color: #fff;
+}
+.praise-quality__title {
+    margin-bottom: 24px;
+    text-align: initial;
+}
+.praise-quality__text {
+    font-size: 18px;
+    line-height: 30px;
+    opacity:0.8;
+}
+.praise-quality__img {
+    margin-top: -180px;
+}
+
+/* OUR HEADQUARTERS */
+.section-our-headquarters {
+    margin-bottom: 50px;
+}
+.section-our-headquarters-card {
+    justify-content: space-between;
+    flex-direction: initial;
+    padding-top: 45px;
+    padding-right: 55px;
+}
+.our-headquarters-content-wrapper {
+    margin-top: 95px;
+    width: 100%;
+    max-width: 184px;
+    align-self: flex-end;
+}
+.our-headquarters-img {
+    align-self: flex-start;
+}
 
 /* FOOTER  */
 .site-footer {
