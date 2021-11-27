@@ -500,6 +500,7 @@ h2, h3, h4, p {
     padding-right: 30px;
     padding-bottom: 90px;
     background-color: var(--dark-brown);
+    background-image: url(/img/bg-why-we.jpg);
 }
 .praise-quality-content-wrapper {
     width: 100%;
@@ -598,7 +599,7 @@ only screen and (                min-resolution: 2dppx) {
     .site-our-collection {
         background-image: url(/img/bg-our-collection@2x.jpg);
     }
-    .why-we {
+    .why-we, .praise-quality {
         background-image: url(/img/bg-why-we@2x.jpg);
     }
 }
