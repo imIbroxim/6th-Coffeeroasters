@@ -288,19 +288,20 @@ h2, h3, h4, p {
 
 /* WHY WE  */
 .why-we-wrapper {
-    margin-bottom: 289px;
+    margin-bottom: 80px;
 }
 .why-we {
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 31px;
-    background-color:var(--dark-brown);
     background-image: url(/img/bg-why-we.jpg);
+    background-repeat: no-repeat;
 }
 .why-we-title-text-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 80px;
     text-align: center;
     color: #fff;
 }
@@ -550,7 +551,8 @@ h2, h3, h4, p {
 }
 .page-create-plan-section-how-it-works {
     padding-bottom: 80px;
-    background-image: initial;
+    background-image: url(/img/bg-how-it-works.jpg);
+    background-repeat:repeat;
 }
 
 /* FOOTER  */
